@@ -1,0 +1,56 @@
+
+- name: Task Sequence Basics
+  href: TaskSequence/toc.yml
+- name: Task Sequence Adv.
+  items:
+  - name: Backup & Restore Machines (WIM)
+    href: TaskSequence/SCCM_TaskSequence_HowTo_BackupVolume.md
+- name: ConfigMgr Topics
+  items:
+  - name: Hyper-V
+    href: Hyper-V-Automate-OSD-Test-Machines.md
+  - name: Manufacturer Tools
+    href: Manufacturer-Tools.md    
+  - name: Content Items
+    href: Content/toc.yml
+  - name: Windows Servicing (Feature Updates)
+    href: Windows-Servicing/toc.yml
+- name: ConfigMgr Community Tools
+  href: Community-Tools/index.md  
+  items:
+  - name: Recast Right Click Tools Community Version
+    href: Community-Tools/Community-Tools-Recast-Right-Click-Tools-Community.md
+  - name: GitHub | Scripts
+    href: Community-Tools/Community-Tools-Scripts.md  
+  - name: OSD Builder
+    href: Community-Tools/Community-Tools-OSD-Builder.md
+  - name: WIMWitch
+    href: Community-Tools/Community-Tools-WIMWitch.md
+  - name: MS Surface Deployment Accelerator
+    href: Community-Tools/Community-Tools-SurfaceDeploymentAccelerator.md
+  - name: CMPackager App
+    href: Community-Tools/Community-Tools-CMPackager.md  
+  - name: Collection Commander
+    href: Community-Tools/Community-Tools-Collection-Commander.md 
+  - name: OneVinn Tools
+    href: Community-Tools/Community-Tools-OneVinn-Tools.md   
+  - name: Chocolatey
+    href: Community-Tools/Community-Tools-Chocolatey.md   
+  - name: RuckZuck
+    href: Community-Tools/Community-Tools-RuckZuck.md
+  - name: UI++
+    href: Community-Tools/Community-Tools-UI++.md
+  - name: Windows Customizations
+    href: Community-Tools/Windows-Customizations-Overview.md
+    items:
+    - name: This PC - Set to Hostname
+      href: Community-Tools/Windows-Customizations-This-PC-Name.md       
+- name: Recast Software Site
+  href: https://www.recastsoftware.com
+- name: Recast Software Blog
+  href: https://www.recastsoftware.com/blog  
+  items: 
+  - name: ConfigMgr Lab Series
+    href: ConfigMgr-Lab-Series.md
+  - name: M365 Deployment Series
+    href: M365-Deployment-Series.md

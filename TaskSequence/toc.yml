@@ -1,0 +1,105 @@
+- name: Windows PE PowerShell Support
+  href: WinPEPSSupport.md
+  items:
+  - name: Modify Boot Images
+    href: ModifyBootImages.md
+  - name: Create Boot Media (ISO)
+    href: CreateBootMedia.md
+- name: Conditions (Step Logics)
+  href: Conditions.md
+- name: Variables
+  href: Variables.md
+- name: Run As Option
+  href: SCCM_TaskSequence_StepOption_RunAs.md
+- name: Task Sequence Debugger
+  href: SCCM-TaskSequence-Debugger.md
+- name: Task Sequence COM Object
+  href: TSComObject.md
+- name: Task Sequence Tips
+  href: SCCM-Task-Sequence-Tips.md
+- name: Task Sequence Steps
+  href: Index.md
+  items:
+  - name: General
+    items:
+    - name: Run Command Line
+      href: SCCM_TaskSequence_Step_RunCommandLine.md
+    - name: Run PowerShell Script
+      href: SCCM_TaskSequence_Step_RunPowerShellScript.md
+    - name: Set Dynamic Variables
+      href: SCCM_TaskSequence_Step_SetDynamicVariables.md
+    - name: Join Domain or Workgroup
+      href: SCCM_TaskSequence_Step_JoinDomainorWorkgroup.md
+    - name: Connect to Network Folder
+      href: SCCM_TaskSequence_Step_ConnectNetworkFolder.md
+    - name: Restart Computer
+      href: SCCM_TaskSequence_Step_RestartComputer.md
+    - name: Set Task Sequence Variable
+      href: SCCM_TaskSequence_Step_SetTaskSequenceVariable.md
+    - name: Check Readiness
+      href: SCCM_TaskSequence_Step_CheckReadiness.md
+    - name: Run Task Sequence
+      href: SCCM_TaskSequence_Step_RunTaskSequence.md
+  - name: Software
+    items:
+    - name: Install Application
+      href: SCCM_TaskSequence_Step_InstallApplication.md
+    - name: Install Packages
+      href: SCCM_TaskSequence_Step_InstallPackage.md
+    - name: Install Software Updates
+      href: SCCM_TaskSequence_Step_InstallSoftwareUpdates.md
+    - name: Download Package Content
+      href: SCCM_TaskSequence_Step_DownloadPackageContent.md
+  - name: Disks
+    items:
+    - name: Format and Partition Disk
+      href: SCCM_TaskSequence_Step_FormatandPartitionDisk.md
+    - name: Convert Disk to Dynamic
+      href: SCCM_TaskSequence_Step_ConvertDisktoDynamic.md
+    - name: Enable Bitlocker
+      href: SCCM_TaskSequence_Step_EnableBitlocker.md
+    - name: Disable Bitlocker
+      href: SCCM_TaskSequence_Step_DisableBitlocker.md
+    - name: Pre-provision Bitlocker
+      href: SCCM_TaskSequence_Step_Pre-provisionBitlocker.md
+  - name: User State
+    href: SCCM_TaskSequence_Step_UserState_ComboStep.md
+  - name: Images
+    items:
+    - name: Apply Operating System
+      href: SCCM_TaskSequence_Step_ApplyOperatingSystemImage.md
+    - name: Apply Data Image
+      href: SCCM_TaskSequence_Step_ApplyDiskImage.md
+    - name: Setup Windows and ConfigMgr
+      href: SCCM-TaskSequence-Step-Setup-Windows-And-ConfigMgr.md
+    - name: Upgrade Operating System
+      href: SCCM-TaskSequence-Step-Upgrade-Operating-System.md
+    - name: Install Deployment Tools
+      href: SCCM-TaskSequence-Step-Install-Deployment-Tools.md
+    - name: Prepare ConfigMgr Client for Capture
+      href: SCCM-TaskSequence-Step-Prepare-ConfigMgr-Client-For-Capture.md
+    - name: Prepare Windows for Capture
+      href: SCCM-TaskSequence-Step-Prepare-Windows-For-Capture.md
+    - name: Capture Operating System Image
+      href: SCCM-TaskSequence-Step-Capture-Operating-System-Image.md
+  - name: Drivers
+    items:
+    - name: Auto Apply Drivers
+      href: SCCM-TaskSequence-Step-Auto-Apply-Drivers.md 
+    - name: Apply Driver Package
+      href: SCCM-TaskSequence-Step-Apply-Driver-Package.md
+    - name: Apply Package of Drivers Manually (DISM)
+      href: SCCM-TaskSequence-Package-Drivers-DISM.md
+  - name: Settings
+    items:
+    - name: Capture Network Settings  
+      href: SCCM-TaskSequence-Step-Capture-Network-Settings.md
+    - name: Capture Windows Settings
+      href: SCCM-TaskSequence-Step-Capture-Windows-Settings.md
+    - name: Apply Network Settings
+      href: SCCM-TaskSequence-Step-Apply-Network-Settings.md
+    - name: Apply Windows Settings  
+      href: SCCM-TaskSequence-Step-Apply-Windows-Settings.md
+    - name: Capture & Apply Settings Combined
+      href: SCCM-TaskSequence-Step-Capture-Apply-Windows-Network-Settings.md
+      
