@@ -56,6 +56,11 @@ You have several options, only one required, your [upgrade Media](ConfigMgr-Docs
 
 - You can pick an actual Driver Package, but this is just plain crazy talk.  Unless you have one driver package that works for all your models, this would force you to have an upgrade step per model and control with conditions.  This is why I've never seen this done, but I've seen "Staged Content" Selected, with a variable which contains the location of the drivers.[![Upgrade OS Image 2](media/UpgradeOS02.png)](media/UpgradeOS02.png)
 
+### OSDSetupAdditionalUpgradeOptions Variable
+
+- You can modify the setup command line by leveraging the OSDSetupAdditionalUpgradeOptions variable, using a "Set Task Sequence Variable" step.  More info about Command line Arguments on [MS Docs for Windows 10 Setup Commands](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options)
+[![Upgrade OS Image 43](media/UpgradeOS43.png)](media/UpgradeOS43.png)
+
 ### Other Options
 
 - **Time-out**

@@ -8,6 +8,31 @@ This is a very simple idea, but a bit tricky to implement.  The idea is, enablin
 
 [![This PC 01](media/Customization_ThisPC01.png)](media/Customization_ThisPC01.png)
 
+## Deployment Methods
+
+- Intune*
+- ConfigMgr
+  - Package
+  - Baseline
+  - Task Sequence*
+
+ *Methods I'll cover
+
+ I'm going to Cover the Intune method, and the Task Sequence method, basically all other methods are just different ways of running the PowerShell Script.
+
+## Intune
+
+ I've uploaded the [script to GitHub](https://github.com/gwblok/garytown/blob/master/Intune/Set-ThisPC-icon-to-Machine-name.ps1) which can be leveraged in Intune.
+
+In Intune:
+[![This PC 03](media/Customization_ThisPC03.png)](media/Customization_ThisPC03.png)
+
+Script creates logs:
+[![This PC 04](media/Customization_ThisPC04.png)](media/Customization_ThisPC04.png)
+
+Finished Product:
+[![This PC 05](media/Customization_ThisPC05.png)](media/Customization_ThisPC05.png)
+
 ## Task Sequence Step
 
 [![This PC 02](media/Customization_ThisPC02.png)](media/Customization_ThisPC02.png)

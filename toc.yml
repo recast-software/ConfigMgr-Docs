@@ -10,7 +10,16 @@
   - name: Hyper-V
     href: Hyper-V-Automate-OSD-Test-Machines.md
   - name: Manufacturer Tools
-    href: Manufacturer-Tools.md    
+    href: ConfigMgr-Topics/Manufacturer-Tools.md
+    items:
+    - name: Models Support Tips
+      href: Manufacturer-Tools/Manufacturer-Tools-Model-Support.md
+    - name: Dell | Intune
+      href: Manufacturer-Tools/Manufacturer-Tools-Dell-Intune.md
+    - name: Dell | ConfigMgr
+      href: Manufacturer-Tools/Manufacturer-Tools-Dell-ConfigMgr.md
+  - name: PowerShell Script Troubleshooting
+    href: ConfigMgr-Topics/ConfigMgr-Intune-PowerShell-Script-Troubleshooting.md     
   - name: Content Items
     href: Content/toc.yml
   - name: Windows Servicing (Feature Updates)
@@ -45,6 +54,10 @@
     items:
     - name: This PC - Set to Hostname
       href: Community-Tools/Windows-Customizations-This-PC-Name.md       
+    - name: Setting the Background
+      href: Community-Tools/Windows-Customizations-Background.md  
+    - name: Setting the Lock Screen
+      href: Community-Tools/Windows-Customizations-Lock-Screen.md  
 - name: Recast Software Site
   href: https://www.recastsoftware.com
 - name: Recast Software Blog

@@ -8,3 +8,5 @@
   href: SCCM-Content-Operating-System-Image-Package.md
 - name: Upgrade Operating System Package
   href: SCCM-Content-Upgrade-Operating-System-Package.md
+- name: Cache Management
+  href: SCCM-Content-Cache-Management.md

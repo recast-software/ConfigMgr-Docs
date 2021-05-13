@@ -6,7 +6,9 @@
 
 This Section will be dedicated to Windows Customizations, Branding and Tweaks. Items will include Explorer tweaks, setting the Wallpaper and Lock Screen images, Windows Profile Image replacement, and whatever else we think of.  Much of this material is born out of a MMS session that two of our team members (Gary Blok & Mark Godfrey) would present on regularly.
 
+## Community Posts
 
+- [Deploy a Custom Start and Taskbar Layout Configuration Policy with Partial Lockdown via Intune](https://nathanblasac.com/deploy-a-custom-start-layout-configuration-policy-via-intune-windows-10-1809-a4ed72875c08)
 
 **About Recast Software**
 1 in 3 organizations using Microsoft Configuration Manager rely on Right Click Tools to surface vulnerabilities and remediate quicker than ever before.  

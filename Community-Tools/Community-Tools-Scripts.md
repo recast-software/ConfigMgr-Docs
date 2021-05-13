@@ -50,6 +50,7 @@ This page could be quite long, and thanks to GitHub, it will be impossible to ke
 - [Sjoukje Zaal](https://github.com/SjoukjeZaal/) | [sjoukjezaal.com](https://sjoukjezaal.com/)
 - [Daniel Engberg](https://github.com/danielclasson) | [danielengberg.com](https://www.danielengberg.com/)
 - [Jon Anderson](https://github.com/ConfigJon) | [Jon's Notes](https://www.configjon.com/)
+- [Katy Nicholson](https://github.com/CoasterKaty) | [katystech.blog](https://katystech.blog/)
 
 **Youtube Channels**
 
@@ -60,6 +61,7 @@ This page could be quite long, and thanks to GitHub, it will be impossible to ke
 - [MMS](https://www.youtube.com/channel/UCdLyCpZOXHLEU90qE3HzzNQ)
 - [Intune Training](https://www.youtube.com/channel/UCfmMlhX5TW8cicxHw6ExYVA)
 - [Namaste Techies](https://www.youtube.com/channel/UCDh5BKN1TDQBOirb_PA6fFg/featured)
+- [Mike Tholfsen's quick tips video channel on Microsoft products](https://www.youtube.com/channel/UC2dSE9W3lGYbFi_CPmVtA-A)
 
 
 So that list can be overwhelming, but if you ever find yourself with a few extra minutes, instead of checking out Facebook, or looking at how your stocks are doing, check out another GitHub repo, click around, and see if you find something you could use, or something that sparks an idea for you to build off to improve your work life.

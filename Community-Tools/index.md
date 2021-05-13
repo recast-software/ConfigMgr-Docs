@@ -12,9 +12,9 @@ We here are Recast Software are proud supporters of the ConfigMgr Community, spo
 
 ## [ConfigMgr Community Tools Webinars hosted by Community Contributors](https://www.recastsoftware.com/configmgr-community-tools-webinar-series)
 
-- March 23: Update and Modify WIM Files for Windows Deployment Scenarios, by Donna Ryan
-- March 24: : OneVinn Tools, by Johan Schrewelius & Jorgen Nilsson
-- March 31: BIOS & Drivers Deployment, Setting Up Your CM Infrastructure, by Maurice Daly & Nickolaj Andersen:
+- March 23 [YouTube Playback](https://www.youtube.com/watch?v=-ypQH6m3Kfc): Update and Modify WIM Files for Windows Deployment Scenarios, by Donna Ryan
+- March 24 [YouTube Playback](https://www.youtube.com/watch?v=JGY47nBHXFc): Onevinn Tools, by Johan Schrewelius & Jorgen Nilsson
+- March 31 [YouTube Playback](https://www.youtube.com/watch?v=2_5RY9gjCTg): BIOS & Drivers Deployment by Maurice Daly & David Segura
 - April 1: Cloud Imaging using ConfigMgr, and MDT and PowerShell Deployment, by Johan Arwidmark
 
 ## ConfigMgr Community Hub & GitHub
@@ -92,7 +92,7 @@ This full feathered C# application also offers password protected debug mode and
 
 - ### **Application Management**
 
-  - [RockZuck](https://ruckzuck.tools/)
+  - [RuckZuck](https://ruckzuck.tools/)
     - RuckZuck is a free Software Package Manager for Windows, designed to keep the Software on your System(s) up to date even if the Software was not installed with RuckZuck.
   - [Chocolatey](https://chocolatey.org/) "The Package Manager for Windows - Modern Software Automation"
   - [WinGet](https://docs.microsoft.com/en-us/windows/package-manager/winget/) (Microsoft)
@@ -100,9 +100,11 @@ This full feathered C# application also offers password protected debug mode and
   - [PatchMyPC Home](https://patchmypc.com/home-updater)
     - Home Updater is a free, easy-to-use program that keeps over 300 applications up-to-date on your computer. It is an easy way to update or install a large list of programs on to your computer.
   - [PowerShell App Deploy Toolkit](http://psappdeploytoolkit.com/)
-    - PADT has helped to provide a better end user experience for ConfigMgr Deployments than the native deployment options avialble to you.
+    - PADT has helped to provide a better end user experience for ConfigMgr Deployments than the native deployment options available to you.
   - [PowerShell App Deployment Toolkit - GUI](https://www.oscc.be/sccm/configmgr/powershell/posh/intune/Powershell-App-deployment-toolkit-GUI/)
     - GUI for creating applications using the PowerShell App Deployment Toolkit, including creating Software ID Tags for easier License Management.
+  - [Application Tester](https://www.ephingadmin.com/test-configmgr-applications-automatically-with-powershell-and-hyper-v/) (Ryan Ephgrave)
+    - This script will launch a dialog box allowing you to connect to a Hyper-V VM, pull up the policy for any applications that are deployed it it, allow you to add them to a list and have them install while grabbing logs and creating snapshots for the VM.  This is a great way to test several applications automatically.  
   
 - ### **Patch Management**
 

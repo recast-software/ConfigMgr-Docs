@@ -82,7 +82,7 @@ Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent Property
 
 ### Task Sequence
 
-To us in a task sequence, since the images need to be in a package
+To use in a task sequence, the images need to be in a package.
 
 #### **Run Command Line Option**
 
@@ -93,6 +93,7 @@ Step 1: Take OwnerShip & Grant Permissions
 ```
 cmd.exe /c takeown /f C:\Windows\Web\Screen\*.* & cmd.exe /c icacls C:\Windows\Web\Screen\*.* /Grant System:(F)
 ```
+
 [![LockScreen 03](media/Customization_LockScreen03.png)](media/Customization_LockScreen04.png)
 
 Step 2: Copy Images (Reference Package that has your lockscreen.jpg image)
@@ -100,6 +101,7 @@ Step 2: Copy Images (Reference Package that has your lockscreen.jpg image)
 ```
 cmd.exe /c copy lockscreen.jpg C:\Windows\Web\Screen\img100.jpg /Y & cmd.exe /c copy lockscreen.jpg C:\Windows\Web\Screen\img105.jpg /Y
 ```
+
 [![LockScreen 04](media/Customization_LockScreen04.png)](media/Customization_LockScreen02.png)
 
 #### **PowerShell Option**
@@ -109,6 +111,7 @@ You'd have a "Run PowerShell Script" Step, that points to the Script: [Set-LockS
 [![LockScreen 02](media/Customization_LockScreen02.png)](media/Customization_LockScreen02.png)
 
 #### **Disable Spotlight / Bing Rotate**
+
 I have a run command line step that strings all this together.
 
 ```
@@ -129,14 +132,15 @@ Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDelivery
 Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager Property: RotatingLockScreenEnabled Type: REG_DWORD Value: 0  
 Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent Property: DisableWindowsSpotlightFeatures Type: REG_DWORD Value: 00000001  
 ```
-[![LockScreen 05](media/Customization_LockScreen05.png)](media/Customization_LockScreen05.png)
 
+[![LockScreen 05](media/Customization_LockScreen05.png)](media/Customization_LockScreen05.png)
 
 ### Group Policy
 
 You can do both methods using group policy.  Forcing the lockscreen is quite easy, where as replacing the default images is bit more tricky.
 
 #### **Forcing Lock Screen**
+
 This is by far the most easy way to set a branded lock screen in your environment.  
 Group Policy Path: Administrative Templates\Control Panel\Personalization  
 Item: Force a specific default lock screen and logon image:  
@@ -165,15 +169,15 @@ These are all of the Registry items listed above on the page.  Remember, you mig
 
 Once I moved a computer into the OU with this policy applied, it took 2 restarts and logons for it to fully take.
 
-### Intune
+### Intune (Enforced)
 
-#### **Enforced**
 [MS Docs](https://docs.microsoft.com/en-us/mem/intune/configuration/device-restrictions-windows-10#locked-screen-experience) has good information about setting up a lock screen that is enforced.
 
-#### **Set Default**
-[MS Docs](https://docs.microsoft.com/en-us/mem/intune/apps/intune-management-extension) also explains how to deploy powershell scripts. I'd leverage a script to update permissions, download your lock screen image file from a company webserver, then overwrite the defaults.  [This script]() will do most of that for you.
+Basically, you setup a Device Policy in Devices then Assign it to a group:
 
-Instead of pulling the image files from a package, it pulls it from a webserver, you'll just need to update the URL.
+[![LockScreen 14](media/Customization_LockScreen14.png)](media/Customization_LockScreen14.png)
+
+[![LockScreen 13](media/Customization_LockScreen13.png)](media/Customization_LockScreen13.png)
 
 ## Summary
 

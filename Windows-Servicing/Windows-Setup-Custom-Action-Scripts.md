@@ -173,4 +173,5 @@ Towards the end, it shows that it ran the PostUninstall.cmd file.
 - [YouTube Series on Enterprise Feature Management](https://www.youtube.com/playlist?list=PLcmROu_w9HU8WZTlAgHz48O-g1R_FvWG8)  
 - [Windows 10 Feature Updates – Using Custom Action Scripts](https://www.asquaredozen.com/2019/08/25/windows-10-feature-updates-using-custom-action-scripts/) (asquaredozen.com)
 - [Windows 10 Upgrade - Custom Action Scripts](https://garytown.com/windows-10-upgrade-custom-action-scripts) (garytown.com)
+- [Running custom actions during a Windows 10 Feature Update with Configuration Manager](https://msendpointmgr.com/2021/04/12/running-custom-actions-during-a-windows-10-feature-update-with-configuration-manager/) ([Ben Whitmore](https://twitter.com/byteben))
 - [GitHub - Windows 10 Features Update](https://github.com/AdamGrossTX/Windows10FeatureUpdates) (Adam Gross's Feature Update GitHub with a nice Framework to build yourself a support system for Feature Updates)
