@@ -48,6 +48,7 @@ If you use a script in a package or if you embed the script, you can use paramet
 
 **PowerShell execution policy:**  
 [![Run PowerShell Script Image 4](media/RunPowerShellScript04ExecutionPolicy.png)](media/RunPowerShellScript04ExecutionPolicy.png)
+
 I don't take time to sign my scripts and I've never been called out on it, so I don't bother, I always put this on bypass to make my life easy.  [More Info on MS Docs](https://docs.microsoft.com/en-us/mem/configmgr/osd/understand/task-sequence-steps#powershell-execution-policy)  
 
 **Output to task sequence variable:**
