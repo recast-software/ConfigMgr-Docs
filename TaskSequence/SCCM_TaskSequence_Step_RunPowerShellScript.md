@@ -43,6 +43,9 @@ Being able to Embed a script is super handy, and I've moved to doing this whenev
 
 If you use a script in a package or if you embed the script, you can use parameters.  The example above is an embedded script I use to copy logs to a server.  The location is in a parameter, and I even am able to leverage task sequence variables in the parameters (%SMSTS_Build% & %ComputerName%) to feed into the script.  You can see how powerful this can be, as you can then use the same script in different task sequences for different purposes, by feeding the scripts parameters.
 
+> [!IMPORTANT]
+> When using Parameters, do not use "double" quotes, use 'single' quotes, you'll you'll have issues.  Unsure exactly when that changed, but it did.
+
 **PowerShell execution policy:**  
 [![Run PowerShell Script Image 4](media/RunPowerShellScript04ExecutionPolicy.png)](media/RunPowerShellScript04ExecutionPolicy.png)
 I don't take time to sign my scripts and I've never been called out on it, so I don't bother, I always put this on bypass to make my life easy.  [More Info on MS Docs](https://docs.microsoft.com/en-us/mem/configmgr/osd/understand/task-sequence-steps#powershell-execution-policy)  
