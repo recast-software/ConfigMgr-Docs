@@ -193,6 +193,7 @@ I've read over the blog and some of the code, while it was designed for Surface 
 - [BIOS Sledgehammer Project](https://github.com/texhex/BiosSledgehammer) [Michael Hex]
 - [Deploy HP BIOS Settings Using SCCM and HP BIOS Configuration Utility](https://www.danielengberg.com/hp-bios-configuration-utility-sccm/) [@danielclasson]
 - [Deploying HP BIOS Updates – a real world example](https://smsagent.blog/2021/03/30/deploying-hp-bios-updates-a-real-world-example/)[@SMSagentTrevor]
+- [Enable Product in win32_baseboard for Hardware Inventory](https://www.recastsoftware.com/resources/enable-product-in-win32-baseboard-for-hardware-inventory/) [Recast Blog]
 
 ### Dell
 
