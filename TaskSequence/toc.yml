@@ -1,8 +1,10 @@
-- name: Windows PE PowerShell Support
+- name: Windows PE Support
   href: WinPEPSSupport.md
   items:
   - name: Modify Boot Images
     href: ModifyBootImages.md
+  - name: Enable PSGallery Support
+    href: WinPE_PSGallery.md
   - name: Create Boot Media (ISO)
     href: CreateBootMedia.md
 - name: Conditions (Step Logics)
