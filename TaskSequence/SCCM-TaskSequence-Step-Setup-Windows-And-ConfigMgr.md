@@ -112,6 +112,10 @@ At this point, the process is similar to that above, the client is staged, the s
 - Windows Logs (Panther)
   - You'll find info here from when Windows was installed during this step, like this example of where you see Windows Setup finding the SetupComplete.cmd file that the step created as it's Hook to trigger the Task Sequence: [![Setup Win CM 10](media/SetupWinCM10.png)](media/SetupWinCM10.png)
 
+## Troubleshooting
+
+I've seen issues personally and heard from others that somethings the TS will get stuck on this step, or you won't see the TSProgressUI afterwards.  First thing you'll want to do is ensure you have a Restart Computer Step directly after this step.
+
 **About Recast Software**
 1 in 3 organizations using Microsoft Configuration Manager rely on Right Click Tools to surface vulnerabilities and remediate quicker than ever before.  
 [Download Free Tools](https://www.recastsoftware.com/?utm_source=cmdocs&utm_medium=referral&utm_campaign=cmdocs#formarea)  
