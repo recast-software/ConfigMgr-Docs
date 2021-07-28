@@ -8,7 +8,11 @@
 - name: ConfigMgr Topics
   items:
   - name: Hyper-V
-    href: Hyper-V-Automate-OSD-Test-Machines.md
+    items:
+    - name: Hyper-V Automate Test VMs
+      href: ConfigMgr-Topics/Hyper-V-Automate-OSD-Test-Machines.md
+    - name: Hyper-V Automate VHDx Optimization
+      href: ConfigMgr-Topics/Hyper-V-Automate-OptimizeVHDx.md
   - name: Manufacturer Tools
     href: ConfigMgr-Topics/Manufacturer-Tools.md
     items:

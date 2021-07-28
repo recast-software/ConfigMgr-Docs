@@ -50,21 +50,21 @@ Lets talk through a scenario
 
 ## Test Run
 
-[![HyperV Automate 01](TaskSequence/media/HyperVAutomate01.png)](TaskSequence/media/HyperVAutomate01.png)
+[![HyperV Automate 01](media/HyperVAutomate01.png)](media/HyperVAutomate01.png)
 
 I've set it to create 5 machines, they start with Recast, and will be between 01 and 90, depending on what is available.
 
-[![HyperV Automate 02](TaskSequence/media/HyperVAutomate02.png)](TaskSequence/media/HyperVAutomate02.png)
+[![HyperV Automate 02](media/HyperVAutomate02.png)](media/HyperVAutomate02.png)
 
 You can see here, I already have some of machines with those names, so lets run the script and see what happens.
 
-[![HyperV Automate 03](TaskSequence/media/HyperVAutomate03.png)](TaskSequence/media/HyperVAutomate03.png)
-[![HyperV Automate 04](TaskSequence/media/HyperVAutomate04.png)](TaskSequence/media/HyperVAutomate04.png)
+[![HyperV Automate 03](media/HyperVAutomate03.png)](media/HyperVAutomate03.png)
+[![HyperV Automate 04](media/HyperVAutomate04.png)](media/HyperVAutomate04.png)
 
 So, that looks good...
-[![HyperV Automate 05](TaskSequence/media/HyperVAutomate05.png)](TaskSequence/media/HyperVAutomate05.png)
-[![HyperV Automate 06](TaskSequence/media/HyperVAutomate06.png)](TaskSequence/media/HyperVAutomate06.png)
-[![HyperV Automate 07](TaskSequence/media/HyperVAutomate07.png)](TaskSequence/media/HyperVAutomate07.png)
+[![HyperV Automate 05](media/HyperVAutomate05.png)](media/HyperVAutomate05.png)
+[![HyperV Automate 06](media/HyperVAutomate06.png)](media/HyperVAutomate06.png)
+[![HyperV Automate 07](media/HyperVAutomate07.png)](media/HyperVAutomate07.png)
 
 So from the images, you can see it did what I wanted.  It created the VMs, and devices in CM, accounting for ones already created as to avoid duplicates.
 
