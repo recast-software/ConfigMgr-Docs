@@ -6,7 +6,7 @@ Another Hyper-V Post after I ran out of storage on my Windows 10 Hyper-V Host.
 
 TLDR: Full Script on [GitHub](https://github.com/gwblok/garytown/blob/master/HyperV/HyperVOptimizeVHDxFiles.ps1)
 
-The idea here was to create a script to run that would clean up each of the VMs (but only the ones I wanted), shut them down, compact the Virtual Hard Drive File (VHDx File), the boot up the VM again.
+The idea here was to create a script to run that would clean up each of the VMs (but only the ones I wanted), shut them down, compact the Virtual Hard Drive File (VHDx File), the boot up the VM again.  I had started doing this manually after finding a [blog post from Garth](https://askgarth.com/blog/how-to-compact-and-shrink-the-size-of-a-vhd-file/)
 
 High Level Overview of an example:
 Get all VMs on Host that match criteria that the VM is current On and that the VM Name (In Hyper-V) does not match Server.
