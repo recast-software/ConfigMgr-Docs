@@ -10,9 +10,11 @@ The idea here was to create a script to run that would clean up each of the VMs 
 
 High Level Overview of an example:
 Get all VMs on Host that match criteria that the VM is current On and that the VM Name (In Hyper-V) does not match Server.
+
 ```PowerShell
 $VMs = Get-VM | Where-Object {$_.State -eq "Running" -and $_.Name -notmatch "Server"}
 ```
+
 Once we have that infomration, we go a bit deeper by looping through each one using a ForEach
 
 ```PowerShell
@@ -37,14 +39,16 @@ $IPAddress = (Get-VM -Name "$($VM.Name)" | Select -ExpandProperty networkadapter
 Write-Host "$($VM.Name) | $IPAddress" -ForegroundColor Magenta
 ```
 
-Then as long as your DNS is setup properly, you can get the Machine's Windows Name from DNS.  I then have it run a remote powershell script to do cleanup.  The Script is in the $RemoteScript variable. 
+Then as long as your DNS is setup properly, you can get the Machine's Windows Name from DNS.  I then have it run a remote powershell script to do cleanup.  The Script is in the $RemoteScript variable.
 
 ```PowerShell
 $VMNetName = [System.Net.Dns]::GetHostByAddress($IPAddress).Hostname
 Write-Host "$($VM.Name) = $VMNetName | $IPAddress" -ForegroundColor Magenta
 Invoke-Command -ScriptBlock $RemoteScript -ComputerName $VMNetName -ErrorAction Stop
 ```
+
 Remote Script Example which deletes Branch Cache & CCM Cache Items.
+
 ```PowerShell
 $RemoteScript = 
 {  
@@ -57,12 +61,15 @@ $CMCacheObjects.GetCacheElements() | ForEach-Object {
     }
 }
 ```
+
 Once that is done, we confirm that it has a VHDx and not a passthrough drive then shut down the VM
+
 ``` PowerShell
 $VHDXPaths = $VM.HardDrives.path | Where-Object {$VM.HardDrives.DiskNumber -eq $null}
         if ($VHDXPaths){
             Get-VM -Name $VM.Name | Stop-VM -Force
 ```
+
 Once the VM is off, we optimize it.
 
 ```PowerShell
