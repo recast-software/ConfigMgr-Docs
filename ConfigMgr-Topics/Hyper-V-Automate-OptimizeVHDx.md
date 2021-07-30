@@ -86,6 +86,10 @@ ForEach ($VHDXPath in $VHDXPaths)
 Get-VM -Name $VM.Name | Start-VM
 ```
 
+When running the script, you'll see output like, I've boxed the space savings.  In this example I've only compacted the VHDx files, I didn't do any cleanup first.
+
+[![HyperV Optimize 01](media/HyperVOptimize02.png)](media/HyperVOptimize02.png)
+
 Full Script on [GitHub](https://github.com/gwblok/garytown/blob/master/HyperV/HyperVOptimizeVHDxFiles.ps1), grab it and edit it for own needs.
 
 To watch it in motion, check out the script running on YouTube.

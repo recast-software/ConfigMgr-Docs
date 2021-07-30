@@ -37,13 +37,14 @@ Contents: "%windir%\system32\osdsetuphook.exe /execute
 
 ## Task Sequence Tip Posts (Recast Software Blog)
 
-- [Tag Version in Description](https://www.recastsoftware.com/blog/a-week-of-task-sequence-tips-day-01)
-- [Task Sequence Pause](https://www.recastsoftware.com/blog/a-week-of-task-sequence-tips-day-02)
-- [Variables Gather and Capture](https://www.recastsoftware.com/blog/a-week-of-task-sequence-tips-day-03)
-- [SMSTS Log Stamping](https://www.recastsoftware.com/blog/a-week-of-task-sequence-tips-day-04)
-- [Run Task Sequence Step](https://www.recastsoftware.com/blog/a-week-of-task-sequence-tips-day-05)
-- [Static IP Addresses and OSD](https://www.recastsoftware.com/blog/a-week-of-task-sequence-tips-day-06)
-- [Run PowerShell Step](https://www.recastsoftware.com/blog/a-week-of-task-sequence-tips-day-07)
+- [Tag Version in Description](https://www.recastsoftware.com/resources/a-week-of-task-sequence-tips-day-01/)
+- [Task Sequence Pause](https://www.recastsoftware.com/resources/a-week-of-task-sequence-tips-day-02/)
+- [Variables Gather and Capture](https://www.recastsoftware.com/resources/a-week-of-task-sequence-tips-day-03/)
+- [SMSTS Log Stamping](https://www.recastsoftware.com/resources/a-week-of-task-sequence-tips-day-04/)
+- [Run Task Sequence Step](https://www.recastsoftware.com/resources/a-week-of-task-sequence-tips-day-05/)
+- [Static IP Addresses and OSD](https://www.recastsoftware.com/resources/a-week-of-task-sequence-tips-day-06/)
+- [Run PowerShell Step](https://www.recastsoftware.com/resources/a-week-of-task-sequence-tips-day-07/)
+
 
 ## Trigger Task Sequence from Command Line
 
