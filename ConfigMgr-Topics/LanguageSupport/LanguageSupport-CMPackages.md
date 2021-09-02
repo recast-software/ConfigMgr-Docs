@@ -55,6 +55,8 @@ We also run the command to apply an XML file to set the language defaults.  The 
 
 And with that, we are able to support several languages, having them automatically reinstall during the upgrade, without leveraging dynamic updates, or downloading unused content.
 
+You can get all of the task sequences in the WaaS Download Pack on GARYTOWN.Com
+
 **About Recast Software**
 1 in 3 organizations using Microsoft Configuration Manager rely on Right Click Tools to surface vulnerabilities and remediate quicker than ever before.  
 [Download Free Tools](https://www.recastsoftware.com/?utm_source=cmdocs&utm_medium=referral&utm_campaign=cmdocs#formarea)  
