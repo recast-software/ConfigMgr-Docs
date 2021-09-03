@@ -16,9 +16,9 @@
   - name: WaaS
     items:
     - name: WaaS - Language Support - Overview
-      href: ConfigMgr-Topics/LanguageSupport.md 
+      href: ConfigMgr-Topics/LanguageSupport/LanguageSupport.md 
     - name: WaaS - Language Support - Packages
-      href: ConfigMgr-Topics/LanguageSupport-CMPackages.md 
+      href: ConfigMgr-Topics/LanguageSupport/LanguageSupport-CMPackages.md 
   - name: Manufacturer Tools
     href: ConfigMgr-Topics/Manufacturer-Tools.md
     items:
