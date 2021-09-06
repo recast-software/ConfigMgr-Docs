@@ -57,9 +57,16 @@ We also run the command to apply an XML file to set the language defaults.  The 
 
 [![Language Support 11](media/LangSupport11.png)](media/LangSupport11.png)
 
+## Overview
+
 And with that, we are able to support several languages, having them automatically reinstall during the upgrade, without leveraging dynamic updates, or downloading unused content.
 
 You can get all of the task sequences in the WaaS Download Pack on GARYTOWN.Com
+
+Script Links in one place:
+
+- CM Packages for Languages: [GitHub](https://github.com/gwblok/garytown/blob/master/WaaS/Create-Language-CM-Packages.ps1)
+- Task Sequence Dynamic Step: [GitHub](https://github.com/gwblok/garytown/blob/master/WaaS/Create-Lang-Package-Variables-TS-Function.ps1)
 
 **About Recast Software**
 1 in 3 organizations using Microsoft Configuration Manager rely on Right Click Tools to surface vulnerabilities and remediate quicker than ever before.  
