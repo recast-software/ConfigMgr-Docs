@@ -1,6 +1,8 @@
 <img style="float: right;" src="https://docs.recastsoftware.com/media/Recast-Logo-Dark_Horizontal_nav.png"  alt="Image" height="43" width="150">
 
-# Language Support CM Packages
+# Language Support CM Packages & Task Sequence Steps
+
+## CM Packages
 
 For keeping track of the language files, we've created a Package w/ a Pre-cache Program for each language we're supporting.
 
@@ -24,6 +26,8 @@ The Language Package Contents:
 It's broken up into 3 folders, the LocalExperiencePack (Installed after Upgrade), the Language Cabs that get passed to the setup engine (Offline), and the extra language FoDs that get installed via DISM after the upgrade.
 
 Script on [GitHub](https://github.com/gwblok/garytown/blob/master/WaaS/Create-Language-CM-Packages.ps1) to create Packages once you have the 3 ISOs.
+
+## Task Sequence Steps
 
 With the packages created which holds the extra metadata needed to apply it to the Operating System, we leverage that information in the Task Sequence.  We've created a "Module", a child task sequence, which detects if additional languages packs are installed and records that information into task sequence variables, so it then knows which languages to download and apply during the upgrade.
 
