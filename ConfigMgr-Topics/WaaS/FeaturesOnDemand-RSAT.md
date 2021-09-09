@@ -15,9 +15,9 @@ I first found this script on the [Microsoft blog](https://techcommunity.microsof
 
 I took that script and modified it, then added the logic to automatically build a CM Package, along with a Program used for Pre-caching. The script can be found on [GitHub](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/rsat-on-windows-10-1809-in-disconnected-environments/ba-p/570833).
 
-[![Features on Demand 02](media/FOD02.png)](media/FOD02.png)
-[![Features on Demand 01](media/FOD01.png)](media/FOD01.png)
-[![Features on Demand 10](media/FOD10.png)](media/FOD10.png)
+[![Features on Demand 02](media/FoD02.png)](media/FoD02.png)
+[![Features on Demand 01](media/FoD01.png)](media/FoD01.png)
+[![Features on Demand 10](media/FoD10.png)](media/FoD10.png)
 
 The Pre-cache Program is created which will allow you to call the package dynamically in the task sequence, so that it's not actually referenced in the task sequence.  Important, you must check the box on the program in the Advanced tab for "Allow this program to be installed from the Install Package task sequence without being deployed"
 
@@ -28,26 +28,26 @@ The reason you want to avoid having packages referenced in a task sequence is wh
 How do we achieve dynamically downloading the content only on machines that we want it downloaded?  It takes a few steps in the Task Sequence. 
 
 Here is our Features on Demand Module for RSAT, you can see there are no references:
-[![Features on Demand 03](media/FOD03.png)](media/FOD03.png)
+[![Features on Demand 03](media/FoD03.png)](media/FoD03.png)
 
 In the Task Sequence, I first check to see if RSAT is already installed on the machine while on the downlevel OS (1909).
 
-[![Features on Demand 04](media/FOD04.png)](media/FOD04.png)
+[![Features on Demand 04](media/FoD04.png)](media/FoD04.png)
 
 The next group will only run if RSAT was found, if it wasn't found, it just skips the group and moves on.
-[![Features on Demand 05](media/FOD05.png)](media/FOD05.png)
+[![Features on Demand 05](media/FoD05.png)](media/FoD05.png)
 
 Here we create a Variable that holds the Package ID, used in the next step.
-[![Features on Demand 06](media/FOD06.png)](media/FOD06.png)
+[![Features on Demand 06](media/FoD06.png)](media/FoD06.png)
 
 Now we take the ID and add :Pre-cache, which is the name of the Program on the RSAT Package.  With this information, the TS will know what to download.
-[![Features on Demand 07](media/FOD07.png)](media/FOD07.png)
+[![Features on Demand 07](media/FoD07.png)](media/FoD07.png)
 
 This step downloads the Package... because it runs the Program you created, which is why we have a "dummy" command line of "cmd.exe /c", so once it downloads the package, it runs the program instantly and does nothing, then moves on.  That's how we get package to download without referencing it.
-[![Features on Demand 08](media/FOD08.png)](media/FOD08.png)
+[![Features on Demand 08](media/FoD08.png)](media/FoD08.png)
 
 Now that it's downloaded, we need to keep track of where it is on the file system, so we can leverage the files in it later, thats where this powershell script comes in.
-[![Features on Demand 09](media/FOD09.png)](media/FOD09.png)
+[![Features on Demand 09](media/FoD09.png)](media/FoD09.png)
 
 Basically to break it down, we're checking two possible variable locations it could have downloaded to, the task sequence cache area (_SMSTaskSeqeunce\Packages) or the CM Cache (c:\windows\ccmcache). If one of them exist in the TS variables, we grab the location and pass that into our own variable, in this case "FoDs01", so we can find the package contents later when we want to use them.
 
@@ -57,10 +57,10 @@ At this point, we've downloaded the content onto the machine and captured the lo
 
 After it the machine upgrades (1909 -> 20H2), we'll want to reinstall RSAT.  Leveraging the variable we created before the upgrade "RSATEnabled", we will call the script to reinstall RSAT, we also ensure that we have the location of the files "FoDs01" captured.
 
-[![Features on Demand 11](media/FOD11.png)](media/FOD11.png)
+[![Features on Demand 11](media/FoD11.png)](media/FoD11.png)
 
 Then we leverage powershell again to install the Features on Demand.
-[![Features on Demand 12](media/FOD12.png)](media/FOD12.png)
+[![Features on Demand 12](media/FoD12.png)](media/FoD12.png)
 Script is on [GitHub](https://github.com/gwblok/garytown/blob/master/WaaS/Install_RSAT.ps1)
 
 Note, if you have several languages installed on a single machine, you need to have all of the language files for each feature you want to install.  I ran into that issue when I was using the same test machine to reinstall several languages on a machine, and trying to reinstall RSAT.  RSAT install failed until I provided it all of the additional language RSAT files for each language I had installed.
