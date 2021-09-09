@@ -19,6 +19,8 @@
       href: ConfigMgr-Topics/LanguageSupport/LanguageSupport.md 
     - name: WaaS - Language Support - Packages
       href: ConfigMgr-Topics/LanguageSupport/LanguageSupport-CMPackages.md 
+    - name: WaaS - Features on Demand - RSAT
+      href: ConfigMgr-Topics/WaaS/FeaturesOnDemand-RSAT.md 
   - name: Manufacturer Tools
     href: ConfigMgr-Topics/Manufacturer-Tools.md
     items:
