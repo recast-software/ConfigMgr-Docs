@@ -79,6 +79,8 @@ In this method, you've already downloaded the Module nupkg files and placed into
 
 Script is very similar, but is kept in the package with the source, and copies the source from the package instead of the internet.
 
+Script also available on [GitHub](https://github.com/gwblok/garytown/blob/master/CM_PowerShell_Snips/Enable-PSGalleryWinPE-InstallModule.ps1)
+
 ```PowerShell
 param (
     [string]$ModuleName
@@ -118,7 +120,7 @@ Import-Module -Name $ModuleName -Force
 [![PSGallery](media/WinPEPSGallery01.png)](media/WinPEPSGallery01.png)
 [![PSGallery](media/WinPEPSGallery03.png)](media/WinPEPSGallery03.png)
 
-Script also available on [GitHub](https://github.com/gwblok/garytown/blob/master/CM_PowerShell_Snips/Enable-PSGalleryWinPE-InstallModule.ps1)
+
 
 ## In Action - YouTube Video
 
