@@ -111,7 +111,7 @@ I've been told that DISM might not be supported for this, and while I personally
 
 Here you can download a Task Sequence that contains all 4 of the Task Sequences we covered.
 
-[Backup & Restore Task Sequence Set](media/BackupRestore.zip)
+[Backup & Restore Task Sequence Set](https://github.com/recast-software/ConfigMgr-Docs/tree/main/TaskSequence/media/BackupRestore.zip)
 
 ## Related Topics
 
