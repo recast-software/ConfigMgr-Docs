@@ -2,6 +2,7 @@
 
 # Modify Windows Explorer Quick Access Items
 
+Windows 10 / Windows 11 customization of Quick Access. 
 I'm providing a couple of examples, both adding items to the quick access and removing items.
 
 ## Demo Image
