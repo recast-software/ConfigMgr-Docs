@@ -2,7 +2,7 @@
 
 # Modify Windows Explorer Quick Access Items
 
-Windows 10 / Windows 11 customization of Quick Access. 
+Windows 10 / Windows 11 customization of Quick Access.
 I'm providing a couple of examples, both adding items to the quick access and removing items.
 
 ## Demo Image
@@ -15,7 +15,7 @@ After running the Add / Remove scripts:
 
 ## Deployment Methods
 
-This is just a few lines of PowerShell code, but the catch is that it needs to be run in the User Context. To do that, I'm deploying it as a Configuration Item in a Baseline. 
+This is just a few lines of PowerShell code, but the catch is that it needs to be run in the User Context. To do that, I'm deploying it as a Configuration Item in a Baseline.
 
 ## Code
 
@@ -51,6 +51,7 @@ foreach ($Folder in $Folders)
         }
     }
 ```
+
 To grab the full scripts used in baseline, you can grab them from [GitHub](https://github.com/gwblok/garytown/tree/master/ConfigMgr/Baselines)
 
 ## Summary

@@ -70,6 +70,10 @@
       href: Community-Tools/Windows-Customizations-Background.md  
     - name: Setting the Lock Screen
       href: Community-Tools/Windows-Customizations-Lock-Screen.md  
+    - name: Customize Quick Access
+      href: Community-Tools/Windows-Customizations-Quick-Access.md  
+    - name: Create Shortcuts with PowerShell
+      href: Community-Tools/Windows-Customizations-Create-Shortcut.md  
 - name: Recast Software Site
   href: https://www.recastsoftware.com
 - name: Recast Software Blog
