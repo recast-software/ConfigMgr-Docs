@@ -18,7 +18,7 @@ When Possible, I've had the Vendors supply the information for below, so if it s
 
 ### Lenovo
 
-[Enterprise Tools Landing Page](https://support.lenovo.com/us/en/solutions/ht104232) | [Blog Site](https://thinkdeploy.blogspot.com/)
+[Enterprise Tools Landing Page](https://support.lenovo.com/us/en/solutions/ht104232) | [Blog Site](https://blog.lenovocdrt.com/) | [Documentation Library](https://docs.lenovocdrt.com/)
 
 Lenovo Employees to follow on Twitter: Joe Parker [@joe_lenovo](https://twitter.com/joe_lenovo) | Think Deployment [@LenovoCDRT](https://twitter.com/LenovoCDRT)
 
