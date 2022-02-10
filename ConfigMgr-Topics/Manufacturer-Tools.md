@@ -228,6 +228,10 @@ PS C:\>(Get-CimInstance -ClassName Win32_ComputerSystemProduct).Name
 PS C:\>(Get-CimInstance -ClassName Win32_BIOS).SMBIOSBIOSVersion
 M1AKT35A
 
+#Lenovo ID - Used to download drivers
+PS C:\>((Get-WmiObject -Class Win32_ComputerSystemProduct | Select-Object -ExpandProperty Name).SubString(0, 4)).Trim() 
+10MQ
+
 ```
 
 ### Dell

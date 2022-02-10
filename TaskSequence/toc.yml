@@ -3,6 +3,8 @@
   items:
   - name: Modify Boot Images
     href: ModifyBootImages.md
+  - name: Leverage BGInfo in WinPE
+    href: SCCM_TaskSequence_Leverage_BGInfo.md
   - name: Enable PSGallery Support
     href: WinPE_PSGallery.md
   - name: Create Boot Media (ISO)

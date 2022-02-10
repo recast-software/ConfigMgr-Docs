@@ -103,6 +103,10 @@ You want to add a simple item to let your users know that when a computer boots 
 
 - [Create a new WinPE Boot Image](https://sysmansquad.com/2021/02/22/create-a-new-winpe-boot-image/)
 
+### Recast Examples
+
+Check the [Leverage BGInfo in WinPE](SCCM_TaskSequence_Leverage_BGInfo.md) page.
+
 **About Recast Software**
 1 in 3 organizations using Microsoft Configuration Manager rely on Right Click Tools to surface vulnerabilities and remediate quicker than ever before.  
 [Download Free Tools](https://www.recastsoftware.com/?utm_source=cmdocs&utm_medium=referral&utm_campaign=cmdocs#formarea)  
