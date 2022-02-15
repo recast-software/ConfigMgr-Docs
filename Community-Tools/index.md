@@ -46,6 +46,8 @@ Along with the Community Hub integrated right into the CM Console, many folks ha
 
 - ### **Operating System Deployment w/ ConfigMgr**
 
+  - OS Deployment via Cloud (OSDCloud)
+    - [OSD Cloud](https://www.osdcloud.com/) is another project from David Segura, allowing you to boot to WinPE, then pull all required content from the cloud.  OS and updates (and potentially drivers) come from Microsoft, and drivers packs from the major vendors.  This is a great solution for labs, setting up AutoPilot devices, or for personal use, to reinstall Windows on devices.
   - Front Ends
     - [UI++](https://uiplusplus.configmgrftw.com/) (Jason Sandys)
       - Displays information to the interactive user, solicits input from the interactive user, and then performs actions based on that user’s input and selections including populating task sequence variables during Operating System Deployment.
