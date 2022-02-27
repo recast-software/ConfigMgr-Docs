@@ -47,6 +47,8 @@
     href: Community-Tools/Community-Tools-OSD-Builder.md
   - name: OSD Cloud
     href: Community-Tools/Community-Tools-OSD-Cloud.md
+  - name: OSD Cloud with ConfigMgr
+    href: Community-Tools/Community-Tools-OSD-Cloud-CM-TS.md
   - name: WIMWitch
     href: Community-Tools/Community-Tools-WIMWitch.md
   - name: MS Surface Deployment Accelerator
