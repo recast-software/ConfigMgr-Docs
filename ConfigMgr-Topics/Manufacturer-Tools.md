@@ -139,7 +139,9 @@ The HP Image Assistant (HPIA) is an essential tool that provides assistance to I
 
 ### Dell Technologies
 
-[Enterprise Tools Landing Page](https://www.delltechnologies.com/en-us/systems-management/client-command-suite.htm) | [Community Forum](https://www.dell.com/community/Dell-Community/ct-p/English) | [Refurbished Sale Site](https://www.dellrefurbished.com/) | [Outlet Site](https://www.dell.com/en-us/dfb/shop/refurbished-business/cp/outlet-dfb)
+[Enterprise Tools Landing Page](https://www.delltechnologies.com/en-us/systems-management/client-command-suite.htm) | [Evergreen Tools List](https://github.com/mkaptano/tools/) | [Community Forum](https://www.dell.com/community/Dell-Community/ct-p/English) | [Dell Unified Workspace Community](https://dtuwc.com/) | [Refurbished Sale Site](https://www.dellrefurbished.com/) | [Outlet Site](https://www.dell.com/en-us/dfb/shop/refurbished-business/cp/outlet-dfb)
+
+Dell Employees to follow on Twitter: Dell Unified Community [@DTUWCommunity](https://twitter.com/DTUWCommunity) | Mesut Kaptanoğlu [@mkaptano](https://twitter.com/mkaptano)
 
 To solve the challenges for IT groups, Dell’s system management approach is based on four key capabilities.
 
