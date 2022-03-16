@@ -2,8 +2,6 @@
 
 # Manufacturer Tools - HP Client Management Script Library - ConfigMgr or Intune
 
-## **DRAFT**
-
 There are several ways you can leverage HP tools, and it's going to be completely different based on your environment and business requirements.  Perhaps you want all of the content coming from your distribution points, and tightly managed bandwidth, or perhaps you want all of the updates coming from HP so you don't have to manage that.  These posts will focus on HPIA and HPCMSL.  
 because those tools provide the best case for cross platform compatibly, meaning you can leverage the tools with both Intune and ConfigMgr managed devices, or other management tools, as long as you can deploy PowerShell Scripts.
 
@@ -17,10 +15,8 @@ Table of Contents:
   - Automating Install of HPCMSL
   - Automating Update of BIOS
     - Using HPCMSL
-    - Using HPIA (Future Page)
   - Managing BIOS Settings
     - Using HPCMSL
-    - Using HPIA (Future Page)d
     - Using Native WMI (PowerShell)
 
 ## Automating the Install of HPCMSL
@@ -36,6 +32,7 @@ If you'd like to use the PowerShell Gallery, I've uploaded the ConfigMgr CIs for
 ### EXE Download
 
 If your company blocks the PowerShell Gallery, or most of the internet in general, you might have to deploy from the EXE that you can download from the [HP Website](https://www.hp.com/us-en/ads/clientmanagement/download.html).  This method is pretty straight forward, you can use a standard CM Application deployment to deploy the EXE and use a registry value as the detection method.  If you have Intune and want to leverage Proactive Remediation, I have a script for that too on [GitHub](https://github.com/gwblok/garytown/blob/master/Intune/Update-HPCSML.ps1).  
+
 ## Automating Update of BIOS: HPCMSL
 
 This is where you have lots of options, you can leverage baselines, script downloading and updating packages or applications for deployment of BIOS, use task sequences, proactive remediation in Intune.
@@ -80,6 +77,7 @@ If you know the name of the setting, you're already in luck, if you don't I run 
 ```PowerShell
 (Get-HPBIOSSettingsList).Name
 ```
+
 [![HP 05](media/HPBIOSCI05.png)](media/HPBIOSCI05.png)
 
 Then to get more info about the specific item:
@@ -115,19 +113,61 @@ Set-HPBIOSSettingValue -Name "Connected BIOS" -Value "Enable" -Password P@ssw0rd
 
 Typically how I create CIs, is have 1 BIOS Setting Per CI, then include them all into a baseline.
 
-## Managing BIOS Settings with a Baseline & HPCMSL
+## Managing BIOS Settings with a Baseline & HPCMSL or Native WMI
 
 If you made it this far, you can probably see where this is going, but I'm going to throw in a curve ball, what about skipping HPCMSL and just setting the settings via PowerShell without having the dependency of any other software?  Yeah, lets do it.
 
-So if you already have HPCMSL installed on every HP device, sure, feel free to leverage that, if not, then here's a good method:
+### Native WMI
 
+``` PowerShell
+Get-WmiObject -class hp_biossetting -Namespace "root\hp\instrumentedbios" | Select-Object Name, Value
+```
 
+That will give you a list of the BIOS Settings and the possible values and the current value that is set (*)
+
+[![HP 08](media/HPBIOSCI08.png)](media/HPBIOSCI08.png)
+
+With that information, you can start scripting setting BIOS settings with PowerShell without any additional tools, which is pretty slick.
+
+So if you already have HPCMSL installed on every HP device, sure, feel free to leverage that, if not, then here's a good method in a simple script used in a CI.
+
+``` PowerShell
+
+#Mike Terril @miketerrill https://miketerrill.net/ | Gary Blok @gwblok garytown.com
+#Remediation Script:
+$SettingName = 'Wake On LAN'
+$Value = 'Boot to Hard Drive'
+$BIOSPW = 'P@ssw0rd'
+#-------------------------------------
+$BIOS= Get-WmiObject -class hp_biossettinginterface -Namespace "root\hp\instrumentedbios"
+$BIOSSetting = Get-WmiObject -class hp_biossetting -Namespace "root\hp\instrumentedbios"
+If (($BIOSSetting | ?{ $_.Name -eq 'Setup Password' }).IsSet -eq 0)
+{
+    $Result = $BIOS.SetBIOSSetting($SettingName,$Value)
+}
+elseif (($BIOSSetting | ?{ $_.Name -eq 'Setup Password' }).IsSet -eq 1)
+{
+    $PW = "<utf-16/>$BIOSPW"
+    $Result = $BIOS.SetBIOSSetting($SettingName,$Value,$PW)
+}
+ 
+Exit $Result.Return
+```
+
+This script you declare your Setting Name (According to HP), The Value (According to HP), and your BIOS Password (If you have one). It will then check for the BIOS Password, and then set the setting, returning the exit code.
 
 ## Run Scripts
 
-You can also leverage Run Scripts to deploy HPCMSL, or Run HPIA on an adhoc basis.  I use Run Scripts to update BIOS on machines I find downlevel, and it works like a charm.  If you have HPCMSL on a machine, then creating the run scripts is easy.  I have the Run Script check for newer BIOS from HP, then update if available, then trigger a ConfigMgr Agent controlled Restart, popping up the Restart Countdown. (NEED TO GET SCRIPT AND PUT ON GITHUB)
+You can also leverage Run Scripts to deploy HPCMSL, or Run HPIA on an adhoc basis.  I use Run Scripts to update BIOS on machines I find downlevel, and it works like a charm.  If you have HPCMSL on a machine, then creating the run scripts is easy.  I have the Run Script check for newer BIOS from HP, then update if available, then trigger a ConfigMgr Agent controlled Restart, popping up the Restart Countdown.
 
-### Update BIOS
+[![HPCMSL 02](media/HPCMSL02.png)](media/HPCMSL02.png)
+[![HPCMSL 01](media/HPCMSL01.png)](media/HPCMSL01.png)
+
+You can grab my Run Scripts script on [GitHub](https://github.com/gwblok/garytown/blob/master/RunScripts/Update-HPBIOS.ps1)
+
+## Conclusion
+
+HPCMSL is amazing, allow you to script and automate a lot of your HP client's management.  Hopefully this page has given you a small glimpse into what it can do.  I'll be working on additional pages soon to highlight other ways we use it for supporting our workstations.
 
 **About Recast Software**
 1 in 3 organizations using Microsoft Configuration Manager rely on Right Click Tools to surface vulnerabilities and remediate quicker than ever before.  

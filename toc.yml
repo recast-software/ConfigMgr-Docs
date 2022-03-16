@@ -30,6 +30,8 @@
       href: Manufacturer-Tools/Manufacturer-Tools-Dell-Intune.md
     - name: Dell | ConfigMgr
       href: Manufacturer-Tools/Manufacturer-Tools-Dell-ConfigMgr.md
+    - name: HP Management via PowerShell
+      href: Manufacturer-Tools/Manufacturer-Tools-HP-HPCMSL.md
   - name: PowerShell Script Troubleshooting
     href: ConfigMgr-Topics/ConfigMgr-Intune-PowerShell-Script-Troubleshooting.md     
   - name: Content Items
