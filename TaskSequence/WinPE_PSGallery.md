@@ -72,7 +72,6 @@ Now the Script leverages a parameter for you to pass it the name of a module you
 
 [![PSGallery](media/WinPEPSGallery02.png)](media/WinPEPSGallery02.png)
 
-
 ## Pulling Requirements from ConfigMgr Package
 
 In this method, you've already downloaded the Module nupkg files and placed into a Package.  It's essentially the same thing, but pulls from your own servers and gives you full control.
@@ -120,12 +119,17 @@ Import-Module -Name $ModuleName -Force
 [![PSGallery](media/WinPEPSGallery01.png)](media/WinPEPSGallery01.png)
 [![PSGallery](media/WinPEPSGallery03.png)](media/WinPEPSGallery03.png)
 
-
-
 ## In Action - YouTube Video
 
 To see a demo of running these scripts, check out this YouTube Video:
 [![PSGallery](media/WinPEPSGallery04.png)](https://www.youtube.com/watch?v=YXykIY6nIa8)
+
+## Super Simple
+
+David Segura did all the hard work for you, and if you want to leverage his online scripts, you can turn this into one simple step with one command line that will setup PS Gallery for you, along with add his OSD module and a few other nifty items.  
+[![PSGallery](media/WinPEPSGallery05.png)](media/WinPEPSGallery05.png)
+
+I highly recommend checking it out, I've moved my lab OSD processes over to using that.
 
 ### Community Links
 
