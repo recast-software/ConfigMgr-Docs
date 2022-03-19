@@ -127,6 +127,10 @@ To see a demo of running these scripts, check out this YouTube Video:
 ## Super Simple
 
 David Segura did all the hard work for you, and if you want to leverage his online scripts, you can turn this into one simple step with one command line that will setup PS Gallery for you, along with add his OSD module and a few other nifty items.  
+
+```
+powershell.exe -executionpolicy bypass -command "Invoke-Expression (Invoke-RestMethod 'sandbox.osdcloud.com')"
+```
 [![PSGallery](media/WinPEPSGallery05.png)](media/WinPEPSGallery05.png)
 
 I highly recommend checking it out, I've moved my lab OSD processes over to using that.
