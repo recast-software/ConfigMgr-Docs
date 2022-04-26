@@ -69,6 +69,25 @@ Once Complete:
 [![Run Modify Boot Image 96](media/ModifyBoot06.png)](media/ModifyBoot06.png)
 You can see my boot image OS Version has updated to match the ADK, and the Client Version has updated to match the production CM Client in the Console.  I don't bother to update the x86 image, as I don't use it.   I manually updated the Version column with the date.  Then if the date modified doesn't match, I know that CM updated it for me, vs me doing it manually.
 
+### Adding Components
+
+Adding Components allows additional functionality in WinPE at the price of using up more space.  There are several standard ones that ConfigMgr / MDT will add for you at the check of a box.  You can add additonal things like DaRT or Branch Cache with a fair bit of extra effort.  
+
+Built in Options:
+
+[![Run Modify Boot Image 14](media/ModifyBoot14.png)](media/ModifyBoot14.png)
+
+My Recommendations:
+[![Run Modify Boot Image 15](media/ModifyBoot15.png)](media/ModifyBoot15.png)
+
+- Windows PowerShell (WinPE-DismCmdlets)
+- Storage (WinPE-EnhancedStorage)
+- HTML (WinPE-HTA)
+- Windows PowerShell (WinPE-StorageWMI)
+- Microsoft .NET (WinPE-NetFx)
+- Windows PowerShell (WinPE-PowerShell)
+- Microsoft Secure Boot Cmdlets (WinPE-SecureBootCmdlets)
+
 ### Adding Drivers
 
 <https://docs.microsoft.com/en-us/mem/configmgr/osd/get-started/manage-boot-images#drivers>
